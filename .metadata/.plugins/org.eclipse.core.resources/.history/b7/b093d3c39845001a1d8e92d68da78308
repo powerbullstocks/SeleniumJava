@@ -1,0 +1,41 @@
+package nopcommerceV001_cucumber;
+
+public class Bike {
+	
+	String scooterName;
+	String color;
+	int price;
+	
+	Bike m1 = new Bike(String,String,int);
+	Bike m2 = new Bike(String,String,int);
+	
+	public Bike(scooterName,color,price)
+	{
+	
+		this.scooterName = scooterName;
+		this.color = color;
+		this.price = price;
+	}
+	
+	public String getname()
+	{
+		return scooterName;
+	}
+	
+	public String getcolor()
+	{
+		return color;
+	}
+	
+	public int getprice()
+	{
+		return price;
+	}
+	
+	public static void main(String[] a)
+	{
+	
+		
+	}
+	
+}

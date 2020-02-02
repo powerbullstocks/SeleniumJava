@@ -1,0 +1,5 @@
+package com.selenium.logAndReports;
+
+public class Logger {
+
+}

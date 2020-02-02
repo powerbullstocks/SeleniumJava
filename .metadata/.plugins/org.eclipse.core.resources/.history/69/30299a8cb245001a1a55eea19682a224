@@ -1,0 +1,15 @@
+package com.selenium.logAndReports;
+
+import org.apache.log4j.PropertyConfigurator;
+
+public class loggerTest {
+	static String configFilename = "D:\\Selenium java\\nopcommerceV001_cucumber\\test-output\\log4j.properties";
+	public static void getLogger() {
+		PropertyConfigurator.configure(configFilename);
+		
+	}
+	public void testlogger()
+	{
+		getLogger();
+	}
+}

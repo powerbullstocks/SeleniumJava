@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoggerTest" project="nopcommerceV001_cucumber" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.selenium.logAndReports.LoggerTest" time="0.0">
+    <testcase name="testlogger" classname="com.selenium.logAndReports.LoggerTest" time="0.0"/>
+  </testsuite>
+</testrun>

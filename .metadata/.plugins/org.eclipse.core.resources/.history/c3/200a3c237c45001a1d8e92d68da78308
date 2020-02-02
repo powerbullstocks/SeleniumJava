@@ -1,0 +1,8 @@
+package nopcommerceV001_cucumber;
+
+public class Kirthiga {
+
+	public static void main(String args[]) {
+		System.out.println("here " + args[0]);
+	}
+}

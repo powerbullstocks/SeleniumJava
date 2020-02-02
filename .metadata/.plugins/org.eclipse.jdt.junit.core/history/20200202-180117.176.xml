@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRun" project="nopcommerceV001_cucumber" tests="13" started="13" failures="0" errors="2" ignored="1">
+  <testsuite name="testRunner.TestRun" time="24.138">
+    <testsuite name="Feature: User add the customer in the site" time="24.138">
+      <testsuite name="Scenario: User add customer to database" time="24.077" incomplete="true">
+        <error>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IVDV5BS', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\POWERB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46b91e80702828548fffdb56428c9c05
+*** Element info: {Using=link text, value=Logout}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)&#13;
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy20.click(Unknown Source)&#13;
+	at pageobjects.Loginpage.clickLogout(Loginpage.java:77)&#13;
+	at stepdefinitions.Steps.user_click_on_Log_out_link(Steps.java:83)&#13;
+	at ✽.When User click on Log out link(./Features/Addcustomer.feature:37)&#13;
+&#13;
+</error>
+        <testcase name="Given User Launch Chrome Browser" classname="Scenario: User add customer to database" time="1.529"/>
+        <testcase name="When User opens URL &quot;https://admin-demo.nopcommerce.com/login?ReturnUrl=%2Fadmin%2F&quot;" classname="Scenario: User add customer to database" time="3.333"/>
+        <testcase name="And User enters Email as &quot;admin@yourstore.com&quot; and password as &quot;admin&quot;" classname="Scenario: User add customer to database" time="5.257"/>
+        <testcase name="And Click on Login" classname="Scenario: User add customer to database" time="0.084"/>
+        <testcase name="Then Page Title should be &quot;Dashboard / nopCommerce administration&quot;" classname="Scenario: User add customer to database" time="3.181"/>
+        <testcase name="And User click on Customers menu" classname="Scenario: User add customer to database" time="3.16"/>
+        <testcase name="And User click on Customers Submenu" classname="Scenario: User add customer to database" time="1.172"/>
+        <testcase name="And User click on Add new button" classname="Scenario: User add customer to database" time="1.204"/>
+        <testcase name="When User enters customers info" classname="Scenario: User add customer to database" time="1.971"/>
+        <testcase name="And User click on save button" classname="Scenario: User add customer to database" time="0.151"/>
+        <testcase name="Then Page should contain &quot;The new customer has been added successfully.&quot;" classname="Scenario: User add customer to database" time="3.027"/>
+        <testcase name="When User click on Log out link" classname="Scenario: User add customer to database" time="0.006">
+          <error>org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IVDV5BS', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\POWERB~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:59640}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 46b91e80702828548fffdb56428c9c05
+*** Element info: {Using=link text, value=Logout}&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)&#13;
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)&#13;
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;
+	at com.sun.proxy.$Proxy20.click(Unknown Source)&#13;
+	at pageobjects.Loginpage.clickLogout(Loginpage.java:77)&#13;
+	at stepdefinitions.Steps.user_click_on_Log_out_link(Steps.java:83)&#13;
+	at ✽.When User click on Log out link(./Features/Addcustomer.feature:37)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="And close browser" classname="Scenario: User add customer to database" time="0.058" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

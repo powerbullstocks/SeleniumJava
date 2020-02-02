@@ -1,0 +1,18 @@
+package nopcommerceV001_cucumber;
+
+public class Kirthiga {
+
+	public static void main(String args[]) {
+		System.out.println("here " + args[0]);
+		
+		testMethod(args[0])
+		
+	}
+	
+	public int testMethod(String a) {
+		if(a == "test") 
+			return 10;
+		else
+			return 20;
+	}
+}

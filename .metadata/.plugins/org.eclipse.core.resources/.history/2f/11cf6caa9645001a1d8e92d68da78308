@@ -1,0 +1,10 @@
+package nopcommerceV001_cucumber;
+
+public class Person {
+
+	String bikeName;
+	int price;
+	
+	
+	
+}

@@ -1,0 +1,39 @@
+package PowerBull_cucumber.PowerBull_cucumber;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+//https://www.youtube.com/watch?v=sPhYn0K8d5k&list=PL6flErFppaj0mMumHnkXddfd2nL45WV7S&index=2
+import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+
+public class myapplication {
+
+	public ChromeDriver driver;
+	
+	
+	@Test
+	public void startApp()
+	{
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"//Drivers/chromedriver.exe");
+		driver=new ChromeDriver();
+		
+		driver.get("https://google.com");
+		String currentURL=driver.getCurrentUrl();
+		AssertJUnit.assertTrue(currentURL.contains("google"));
+//		System.out.println("Starting app");
+//		Assert.assertEquals(12, 14);
+	}
+	
+	@Test(dependsOnMethods="startApp")
+	public void loginapp()
+	{
+		System.out.println("login to app");
+	}
+	@Test(dependsOnMethods="{loginapp,startApp}")
+	public void logoutapp()
+	{
+		System.out.println("logout app");
+	}
+}
+

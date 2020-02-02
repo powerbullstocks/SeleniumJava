@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.nodeclipse.debug.launch.LaunchConfigurationType">
+    <mapAttribute key="attr_environment_variables">
+        <mapEntry key="C:\Users\PowerBull\AppData\Roaming\npm" value="C:\Users\PowerBull\AppData\Roaming\npm"/>
+    </mapAttribute>
+    <stringAttribute key="key_file_path" value="/protractor/Day 2/secondTest.js"/>
+</launchConfiguration>

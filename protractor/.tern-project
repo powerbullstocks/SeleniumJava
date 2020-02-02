@@ -1,0 +1,56 @@
+{
+  "ecmaVersion": 5,
+  "ide": {
+    "scriptPaths": [
+      {
+        "type": "FOLDER",
+        "path": ".settings"
+      },
+      {
+        "type": "FOLDER",
+        "path": "bin"
+      },
+      {
+        "type": "FOLDER",
+        "path": "Day 2"
+      },
+      {
+        "type": "FOLDER",
+        "path": "node_modules"
+      },
+      {
+        "type": "FOLDER",
+        "path": "src"
+      }
+    ]
+  },
+  "plugins": {
+    "guess-types": {
+      
+    },
+    "outline": {
+      
+    },
+    "jasmine": {
+      
+    },
+    "node": {
+      
+    },
+    "doc_comment": {
+      "strong": true
+    },
+    "angular1": {
+      
+    },
+    "browser-extension": {
+      
+    },
+    "protractor": {
+      
+    }
+  },
+  "libs": [
+    "browser"
+  ]
+}

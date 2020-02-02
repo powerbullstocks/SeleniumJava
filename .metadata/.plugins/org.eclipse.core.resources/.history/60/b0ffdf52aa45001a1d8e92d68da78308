@@ -1,0 +1,94 @@
+package pageobjects;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+
+
+public class Loginpage {
+	public WebDriver ldriver;
+	
+	/* constructor for every elements */
+
+	public Loginpage(WebDriver rdriver)
+	{
+		ldriver=rdriver;
+		PageFactory.initElements(rdriver, this);
+	}
+
+	@FindBy(id="Email")
+	@CacheLookup
+	WebElement txtEmail;
+	
+	
+	@FindBy(id="Password")
+	@CacheLookup
+	WebElement txtPassword;
+	
+	@FindBy(xpath="//input[@value='Log in']")
+	@CacheLookup
+	WebElement btnLogin;
+	
+	
+	@FindBy(linkText="Logout")
+	@CacheLookup
+	WebElement lnkLogout;
+	
+	public void setUserName(String uname) throws InterruptedException
+	{
+		
+		WebDriverWait wait = new WebDriverWait(ldriver, 150); 
+		//wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Logout"))).click();
+		wait.until(ExpectedConditions.visibilityOf(txtEmail));
+		Thread.sleep(3000);
+		txtEmail.clear();
+		txtEmail.sendKeys(uname);
+		
+	}
+	
+	public void setPassword(String pwd)
+	{
+		txtPassword.clear();
+		txtPassword.sendKeys(pwd);
+	}
+	
+	public void clickLogin()
+	{
+		btnLogin.click();
+	}
+	
+	public void clickLogout() 
+	{
+		
+		  // To wait for the element to be clickable 
+		
+		// WebDriverWait wait = new WebDriverWait(ldriver, 50); 
+		// wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Logout"))).click(); //
+		// Actions actions = new Actions(ldriver);
+		// actions.moveToElement(lnkLogout).doubleClick().build().perform();
+			
+		lnkLogout.click();
+	}
+	
+	public static void main(String[] a) throws Exception
+	{
+		WebDriver rdriver = new ChromeDriver();
+		Loginpage lp1 = new Loginpage(rdriver);
+
+		lp1.setUserName("supertest@gmail.com");
+		lp1.setPassword("iamcoming");
+		lp1.clickLogin();
+		
+	}
+	
+}
+
+
+	

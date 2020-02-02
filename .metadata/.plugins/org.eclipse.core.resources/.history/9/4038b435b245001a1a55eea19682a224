@@ -1,0 +1,12 @@
+package com.selenium.logAndReports;
+
+import org.apache.log4j.PropertyConfigurator;
+
+public class Logger {
+	static String configFilename = "";
+	public static void getLogger() {
+		PropertyConfigurator.configure(configFilename);
+		
+	}
+
+}
