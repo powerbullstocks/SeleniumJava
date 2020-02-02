@@ -2,3 +2,15 @@ one.txt file added
 added
 2nd time iam editing the file.
 3rd time i am editing for code change.
+public class Ramroy{
+
+int age;
+String name;
+
+public Ramroy();
+
+public status void main(String() a)
+{
+Ramroy R7 = new Ramroy();
+}
+}
