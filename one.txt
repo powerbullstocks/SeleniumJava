@@ -11,6 +11,7 @@ public Ramroy();
 
 public status void main(String() a)
 {
+Ramroy R8 = new Ramroy();
 Ramroy R7 = new Ramroy();
 }
 }
