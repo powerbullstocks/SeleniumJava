@@ -13,6 +13,7 @@ public status void main(String() a)
 {
 Ramroy R8 = new Ramroy();
 test the test
+hot iron is ready to get flexible.
 Ramroy R7 = new Ramroy();
 }
 }
